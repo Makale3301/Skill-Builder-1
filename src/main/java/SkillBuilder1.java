@@ -9,7 +9,25 @@ import java.util.Scanner;
 public class SkillBuilder1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        //TODO : Replace this comment with your code
+        String userString = input.nextLine();
+        float spice;
+        spice= input.nextFloat();
+
+        System.out.println("You're Jane's friend! ");
+        System.out.println("\"What's your name?\"");
+
+        System.out.println("Enter a floating-point number:");
+
+        double mJohn = Math.pow(2.0,(Math.sqrt(5.0)/Math.pow(spice,3)))*(4.0/3.0);
+
+        System.out.println("Well " + userString + ", the spice value resulted in " + mJohn);
+        mJohn = (int)(mJohn*100)/100.0;
+        System.out.println("And the converted value is "+ (mJohn));
+
+
+
+
+
     }
 
     public static void calcWallPaint() {
@@ -25,6 +43,30 @@ public class SkillBuilder1 {
         // Prompt user to input wall's width
         System.out.println("Enter wall width (feet):");
         double wallWidth = input.nextDouble();
+
+        double wallArea = wallWidth * wallHeight;
+
+        System.out.println("Wall area:" + " " + wallArea + " square feet" );
+
+        double mkPaint = wallArea / squareFeetPerGallons;
+        System.out.printf("Paint needed: %.2f gallons\n",mkPaint);
+
+        int wholeNum = (int) Math.ceil((mkPaint / gallonsPerCan));
+        System.out.println("Cans needed: " + ( wholeNum) + " can(s)");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         // TODO: Calculate and output the wall's area
 
